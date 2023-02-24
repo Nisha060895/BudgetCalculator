@@ -1,0 +1,15 @@
+$incomeThemeColor: #1e8f5a;
+$expenseThemeColor: #e24439;
+$cardBGColor: #e6eaef;
+
+@mixin amountBlock($color) {
+    background: rgba($color, 0.2);
+    color: $color;
+    padding: 5px;
+}
+
+@mixin listheader($color) {
+    color: $color;
+    text-transform: uppercase;
+    font-weight: bold;
+}

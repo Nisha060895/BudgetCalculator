@@ -1,0 +1,9 @@
+<p class="budget-value">{{budgetLeft}}</p>
+<div class="d-flex justify-content-around">
+    <div>
+        <app-all-income (totalIncome)="totalIncome($event)"></app-all-income>
+    </div>
+    <div>
+        <app-expenses (totalExpense)="totalExpense($event)"></app-expenses>
+    </div>
+</div>

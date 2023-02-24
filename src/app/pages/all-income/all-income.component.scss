@@ -1,0 +1,13 @@
+@import './../../styles/variables.scss';
+
+.card-bg {
+    color: $incomeThemeColor;
+
+    .amount-block {
+       @include amountBlock($incomeThemeColor);
+    }
+}
+
+.income-header {
+    @include listheader($incomeThemeColor);
+}

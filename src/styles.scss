@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+@import '/src/app/styles/variables.scss';
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input, .form-control:focus {
+    border: none !important;
+    outline: none !important;
+    background: rgba($cardBGColor, 0.5) !important;
+    box-shadow: none !important;
+}
+
+.amount-card {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba($cardBGColor, 0.5);
+
+    img {
+        display: none;
+    }
+
+    .reason-block {
+        text-transform: capitalize;
+    }
+
+    &:hover {
+        position: relative;
+        cursor: pointer;
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 0.15rem rgb(13 110 253 / 25%);
+
+        img {
+            height: 25px;
+            width: 25px;
+            display: block;
+            position: absolute;
+            right: -6px;
+            top: -10px;
+            background: #efd2d2;
+            border-radius: 25px;
+            padding: 3px;
+        }
+    }
+}
